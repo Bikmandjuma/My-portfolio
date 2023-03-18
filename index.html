@@ -8,26 +8,58 @@
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <title>Bikman Djuma Portfolio</title>
+        <title>Bikman's Portfolio</title>
+        <style>
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+            color: white;
+          }
+
+          .tab {
+            padding: 20px;
+            color: white;
+          }
+
+          .row:after {
+            overflow: hidden;
+            display: table;
+            clear: both;
+          }
+
+          .closeButton {
+            float: right;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+          }
+       
+        </style>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Bikman</a>
+                    <a href="#" class="nav__logo"><i class="fas fa-user" style="color:blue"></i> Bikman's portfolio</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active"><i class="fas fa-home" style="color:blue"></i> Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link"><i class="fas fa-info-circle" style="color:blue"></i> About</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link"><i class="fas fa-school" style="color:blue"></i> Education</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link"><i class="fas fa-cogs" style="color:blue"></i> Skills</a></li>
+                        <!-- <li class="nav__item"><a href="#project" class="nav__link"><i class="fas fa-tasks" style="color:blue"></i> Project</a></li> -->
+                        <li class="nav__item"><a href="#contact" class="nav__link"><i class="fas fa-phone" style="color:blue"></i> Contact</a></li>
                     </ul>
                 </div>
 
@@ -40,28 +72,28 @@
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
-                <div class="home__data">
+                <h2 class="section-title">My portfolio</h2>
+
+                <div class="home__data" style="margin-top:-200px;">
                     <h6 class="home__title">Hi,<br>I'am <span class="home__title-color" style="font-size:40px;">Bikman Ntiruhungwa</span><br> Web Developer</h6>
 
                     <a href="#" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/bikman-ntiruhungwa-a54641240/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://web.facebook.com/profile.php?id=100085082424529" target="_blank" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://github.com/Bikmandjuma" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.instagram.com/bikman_bun_djuma/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://wa.me/+250785389000" target="_blank" class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a>
-                    <a href="https://twitter.com/Bikman_Djuma" target="_blank" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+                    <a href="tel:+250785389000" target="_blank" class="home__social-icon" title="phone number"><i class='fa fa-phone'></i></a>
+                    <a href="mailto:ntiruhungwab@gmail.com" target="_blank" class="home__social-icon" title="email"><i class='fa fa-envelope'></i></a>
+                    <a href="https://www.linkedin.com/in/bikman-ntiruhungwa-a54641240/" target="_blank" class="home__social-icon" title="Linkdin"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=100085082424529" target="_blank" class="home__social-icon" title="Facebook"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://github.com/Bikmandjuma" target="_blank" class="home__social-icon" title="Github"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/bikman_bun_djuma/" target="_blank" class="home__social-icon" title="Instagram"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://wa.me/+250785389000" target="_blank" class="home__social-icon" title="Whatsapp"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://twitter.com/Bikman_Djuma" target="_blank" class="home__social-icon" title="Twitter"><i class='bx bxl-twitter' ></i></a>
                 </div>
 
                 <div class="home__img">
                     <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
                         <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
                             <image class="home__blob-img" x="50" y="60" href="assets/img/about.jpg"/>
                         </g>
                     </svg>
@@ -85,13 +117,116 @@
             </section>
 
             <!--===== SKILLS =====-->
+            <section class="skills section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education__container bd-grid">   
+<!-- 
+                    <div>
+                        <div class="education__data">
+                            <h3 style="color:blue;"><u>University 1</u></h3>
+                            <table>
+
+                                 <tr>
+                                    <td style="color:blue;">Year</td>
+                                    <td>2022 - present</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Degree</td>
+                                    <td>Bachelor's degree -> Ao</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Option </td>
+                                    <td>Information Technology</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">School </td>
+                                    <td>University of kigali</td>
+                                </tr>
+
+                            </table>
+    
+                        </div>
+                    </div>    -->    
+                    
+                    <div>
+                        <div class="education__data">
+                            <h3 style="color:blue;"><u>University</u></h3>
+                            <table>
+
+                                 <tr>
+                                    <td style="color:blue;">Year</td>
+                                    <td>2017 - 2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Degree</td>
+                                    <td>Advanced diploma -> A1</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Option </td>
+                                    <td>Information Technology</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">School </td>
+                                    <td>Tumba College of Technology (IPRC Tumba)</td>
+                                </tr>
+
+                            </table>
+    
+                        </div>
+                    </div>
+
+                    <div style="display: relative;margin-top:-40px;">
+                        <div class="education__data">
+                            <h3 style="color:blue;"><u>High school</u></h3>
+                            <table>
+
+                                 <tr>
+                                    <td style="color:blue;">Year</td>
+                                    <td>2013 - 2015</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Degree</td>
+                                    <td>A2</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Option </td>
+                                    <td>Physics-Chemistry-Mathematics (PCM)</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">School </td>
+                                    <td>G.S Saint Joseph Nyamasheke</td>
+                                </tr>
+
+                            </table>
+    
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
-                <div class="skills__container bd-grid">          
+                <div class="skills__subtitle">
+                    <h2>Profesional Skills</h2>
+                    <p>I can work full time, 8+ hours a day, 6 days a week. I hope to work with you in a long time.</p>
+                </div><br>
+
+                <div class="skills__container bd-grid"> 
+
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">I can work full time, 8+ hours a day, 6 days a week. I hope to work with you in a long time.</p>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <!-- <i class='bx bxl-html5 skills__icon'></i> -->
@@ -128,6 +263,11 @@
                                 <span class="skills__percentage">87%</span>
                             </div>
                         </div>
+
+                    </div>
+                    
+                    <div>              
+                        <!-- <img src="assets/img/work3.jpg" alt="" class="skills__img"> -->
                         <div class="skills__data">
                             <div class="skills__names">
                                 <!-- <i class='bx bxl-javascript skills__icon' ></i> -->
@@ -164,19 +304,50 @@
                                 <span class="skills__percentage">75%</span>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+
                     </div>
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <!-- <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+            <!-- ===== WORK =====-->
+            <!-- <section class="work section" id="project"> -->
+                <!-- <h2 class="section-title">Project</h2>
 
-                <div class="work__container bd-grid">
+                <div class="project_container bd-grid">
+                    
+                     <div class="project_data" id="div11" onclick="openContent('ContentProj')" >
+                        Project name 1
+                     </div>
+
+                     <span id="ContentProj" class="project_data" style="display:none;">
+                        <p onclick="this.parentElement.style.display='none';document.getElementById('div11').style.backgroundColor='white';document.getElementById('div11').style.color='black';" class="closeContent">&times;</p>
+                        <span
+                            onclick="this.parentElement.style.display='none'"
+                            class="closeButton"
+                          >
+                            &times;
+                          </span>
+                            <p>Project description !</p>
+                            <a href="#project-link">Click here</a>
+                    </span>
+
+                     <div class="project_data" style="margin-top:-20px;">
+                        Project name 2
+                     </div>
+
+                </div>
+
+                <script>
+                    function openContent(project){
+                        var div1=document.getElementById('div11');
+                        document.getElementById(project).style.display="block";
+                        div1.style.backgroundColor="skyblue";
+                        div1.style.color="white";
+                    }
+                </script>
+                 -->
+
+                <!-- <div class="work__container bd-grid">
                     <a href="" class="work__img">
                         <img src="assets/img/work1.jpg" alt="">
                     </a>
@@ -195,33 +366,50 @@
                     <a href="" class="work__img">
                         <img src="assets/img/work6.jpg" alt="">
                     </a>
-                </div>
-            </section>
- -->
+                </div> -->
+            <!-- </section> -->
+
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                    <form action="" class="contact__form" method="POST">
+                        <input type="text" placeholder="Name" class="contact__input"  id="name" required>
+                        <input type="mail" placeholder="Email" class="contact__input"  id="email" required>
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" id="body" required></textarea>
+                        <input type="button" value="Send" class="contact__button button" onclick="sendMail()">
                     </form>
                 </div>
             </section>
         </main>
 
+        <script>
+
+            function sendMail(){
+                var name=document.getElementById('name');
+                var email=document.getElementById('email');
+                var body=document.getElementById('body');
+                var message="am "+name+" "+body+" : and my email is : "+email;
+                var subject="from portfolio";
+
+                window.location="mailto:ntiruhungwab@gmail.com?subject="+subject+"&body="+message;
+
+                alert('Message sent successfully !');
+
+            }
+
+        </script>
+
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Bikman djuma</p>
+            <p class="footer__title">Bikman Ntiruhungwa</p>
             <div class="footer__social">
                 <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169;myportfolio&copy;. All rigths reserved</p>
+            <p class="footer__copy">&#169;myportfolio&copy;.<script>new getFullYear();</script> All rigths reserved</p>
         </footer>
 
 
