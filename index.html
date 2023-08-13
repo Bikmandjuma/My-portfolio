@@ -58,7 +58,7 @@
                         <li class="nav__item"><a href="#about" class="nav__link"><i class="fas fa-info-circle" style="color:blue"></i> About</a></li>
                         <li class="nav__item"><a href="#education" class="nav__link"><i class="fas fa-school" style="color:blue"></i> Education</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link"><i class="fas fa-cogs" style="color:blue"></i> Skills</a></li>
-                        <li class="nav__item"><a href="#project" class="nav__link"><i class="fas fa-tasks" style="color:blue"></i> Project 1</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link"><i class="fas fa-tasks" style="color:blue"></i> Project 2</a></li>
                         <!-- <li class="nav__item"><a href="#contact" class="nav__link"><i class="fas fa-phone" style="color:blue"></i> Contact</a></li> -->
                     </ul>
                 </div>
@@ -333,18 +333,34 @@
                             <a href="http://bikman-fav-system.000webhostapp.com" target="parent">Click me {Fav-system}</a>
                     </span>
 
-                     <!-- <div class="project_data" style="margin-top:-20px;">
-                        Project name 2
-                     </div> -->
+                    <!-- project 2 nlp -->
+                     <div class="project_data" id="div12" onclick="openContent('ContentProj2')" style="margin-top:-40px;">
+                        AI app search content, works like ChatGPT
+                     </div>
+
+                     <span id="ContentProj2" class="project_data" style="display:none;margin-top: -50px;">
+                        <p onclick="this.parentElement.style.display='none';document.getElementById('div12').style.backgroundColor='white';document.getElementById('div12').style.color='black';" class="closeContent">&times;</p>
+                        <span
+                            onclick="this.parentElement.style.display='none'"
+                            class="closeButton"
+                          >
+                            &times;
+                          </span>
+                            <p>
+                                Natural Language Processing (NLP) is a branch of artificial intelligence that deals with the interaction between computers and human (natural) languages. It is used to analyze, understand, and generate human language in a smart and useful way. this AI_app is search contents app u can get more usefull knowledge on it , its literally works like chatGPT.
+                            </p>
+                            <a href="https://bikman-ai-app.netlify.app/" target="parent">Click me {AI_app}</a>
+                    </span>
+                    <!--end of proejct  2-->
 
                 </div>
 
                 <script>
                     function openContent(project){
-                        var div1=document.getElementById('div11');
+                        var div2=document.getElementById('div12');
                         document.getElementById(project).style.display="block";
-                        div1.style.backgroundColor="skyblue";
-                        div1.style.color="white";
+                        div2.style.backgroundColor="skyblue";
+                        div2.style.color="white";
                     }
                 </script>
                  
