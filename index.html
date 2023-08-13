@@ -334,7 +334,7 @@
                     </span>
 
                     <!-- project 2 nlp -->
-                     <div class="project_data" id="div12" onclick="openContent('ContentProj2')" style="margin-top:-40px;">
+                     <div class="project_data" id="div12" onclick="openContent2('ContentProj2')" style="margin-top:-40px;">
                         AI app search content, works like ChatGPT
                      </div>
 
@@ -357,6 +357,13 @@
 
                 <script>
                     function openContent(project){
+                        var div1=document.getElementById('div11');
+                        document.getElementById(project).style.display="block";
+                        div1.style.backgroundColor="skyblue";
+                        div1.style.color="white";
+                    }
+
+                    function openContent2(project){
                         var div2=document.getElementById('div12');
                         document.getElementById(project).style.display="block";
                         div2.style.backgroundColor="skyblue";
