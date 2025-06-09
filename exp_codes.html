@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="8EAyTUeD1yx3xYDE1049RvdckgFUhj4_cRsJL2szwbY" />
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Bikman's Portfolio</title>
+        <style>
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+            color: white;
+          }
+
+          .tab {
+            padding: 20px;
+            color: white;
+          }
+
+          .row:after {
+            overflow: hidden;
+            display: table;
+            clear: both;
+          }
+
+          .closeButton {
+            float: right;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+          }
+
+          #project_id{
+            padding:3px 7px 3px 3px;
+            border-radius:50%;
+            background-color: steelblue;
+            color: white;margin:5px;
+          }
+       
+        </style>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"><i class="fas fa-user" style="color:blue"></i> Bikman's portfolio</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active"><i class="fas fa-home" style="color:blue"></i> Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link"><i class="fas fa-info-circle" style="color:blue"></i> About</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link"><i class="fas fa-school" style="color:blue"></i> Education</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link"><i class="fas fa-cogs" style="color:blue"></i> Skills</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link"><i class="fas fa-tasks" style="color:blue"></i> Projects </a><!--span style="background-color:steelblue ;padding:3px;color:white;border-radius:10px;">2</span--> </li>
+                        <!-- <li class="nav__item"><a href="#contact" class="nav__link"><i class="fas fa-phone" style="color:blue"></i> Contact</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <h2 class="section-title">My portfolio</h2>
+
+                <div class="home__data" style="margin-top:-100px;">
+                    <h6 class="home__title">Hi,<br>I'am <span class="home__title-color" style="font-size:40px;">Bikman Ntiruhungwa</span><br> Software Developer</h6>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="tel:+250785389000" target="_blank" class="home__social-icon" title="phone number"><i class='fa fa-phone'></i></a>
+                    <a href="mailto:ntiruhungwab@gmail.com" target="_blank" class="home__social-icon" title="email"><i class='fa fa-envelope'></i></a>
+                    <a href="https://www.linkedin.com/in/bikman-ntiruhungwa-a54641240/" target="_blank" class="home__social-icon" title="Linkdin"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=100085082424529" target="_blank" class="home__social-icon" title="Facebook"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://github.com/Bikmandjuma" target="_blank" class="home__social-icon" title="Github"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/bikman_bun_djuma/" target="_blank" class="home__social-icon" title="Instagram"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://wa.me/+250785389000" target="_blank" class="home__social-icon" title="Whatsapp"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://twitter.com/Bikman_Djuma" target="_blank" class="home__social-icon" title="Twitter"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g mask="url(#mask0)">
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/about.jpg"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="" style="border: 2px solid #eee;">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Bikman</h2>
+                        <!-- <p class="about__text">I am self-taught technologist with aim to always learn and acquire new skills, very passionate in application development I pass several hours working on improvement of my coding ability and learning new technologies stuff, my experience in programming and networking was acquired through self education, exercising, development of personal projects and assistance to my colleague’s technologists on some modules ,and i was fascinated in Web Application during my university period and the Library & Information Science made me as a software Developer. Software Application Development is not only my job, but also my life ,i mean lifestyle coding.</p>           -->
+                        <p class="about__text">
+                            I am a dedicated and innovative software developer with a fervent enthusiasm for crafting elegant solutions to complex problems. With a strong foundation in information technology and years of hands-on experience, I bring a blend of expertise and creativity to every project I undertake.
+
+                            Driven by a relentless curiosity and a passion for continuous improvement, I thrive in dynamic environments where I can leverage the latest technologies to push the boundaries of what's possible. My journey as a software developer has been marked by a commitment to lifelong learning, fueled by a desire to stay ahead of industry trends and embrace emerging technologies.
+
+                            Whether I'm collaborating with cross-functional teams, architecting scalable systems, or diving deep into code, I approach each challenge with tenacity and an unwavering dedication to excellence. My goal is not just to write code, but to engineer solutions that make a meaningful impact, empower users, and drive business success.
+
+                            As a software developer, I see myself not just as a coder, but as a problem-solver, a creative thinker, and a catalyst for innovation. I am passionate about leveraging technology to build products that inspire, transform industries, and shape the future.
+                        </p>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education__container bd-grid">       
+                    
+                    <div>
+                        <div class="education__data">
+                            <h3 style="color:blue;"><u>University</u></h3>
+                            <table>
+
+                                 <tr>
+                                    <td style="color:blue;">Year</td>
+                                    <td>2017 - 2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Degree</td>
+                                    <td>Advanced diploma -> A1</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Option </td>
+                                    <td>Information Technology</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">School </td>
+                                    <td>Tumba College of Technology (IPRC Tumba)</td>
+                                </tr>
+
+                            </table>
+    
+                        </div>
+                    </div>
+
+                    <div style="display: relative;margin-top:-20px;">
+                        <div class="education__data">
+                            <h3 style="color:blue;"><u>High school</u></h3>
+                            <table>
+
+                                 <tr>
+                                    <td style="color:blue;">Year</td>
+                                    <td>2013 - 2015</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Degree</td>
+                                    <td>A2</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">Option </td>
+                                    <td>Physics-Chemistry-Mathematics (PCM)</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color:blue;">School </td>
+                                    <td>G.S Saint Joseph Nyamasheke</td>
+                                </tr>
+
+                            </table>
+    
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__subtitle">
+                    <h2>Profesional Skills</h2>
+                    <p>I can work full time, 8+ hours a day, 6 days a week. I hope to work with you in a long time.</p>
+                </div><br>
+
+                <div class="skills__container bd-grid"> 
+
+                    <div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-html5 skills__icon'></i> -->
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-css3 skills__icon'></i> -->
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-css3 skills__icon'></i> -->
+                                <span class="skills__name">php</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-css3 skills__icon'></i> -->
+                                <span class="skills__name">python</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div>              
+                        <!-- <img src="assets/img/work3.jpg" alt="" class="skills__img"> -->
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-javascript skills__icon' ></i> -->
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxs-laravel skills__icon'></i> -->
+                                <span class="skills__name">VueJS</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <iconify-icon icon="logos:laravel"></iconify-icon>
+                                <span class="skills__name">Laravel</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <!-- <i class='bx bxl-javascript skills__icon' ></i> -->
+                                <span class="skills__name">Flask</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== WORK =====-->
+            <section class="work section" id="project">
+                <h2 class="section-title">Project ->School-edge</h2>
+
+                <div class="project_container bd-grid">
+                    
+                     <!-- <div class="project_data" id="div11" onclick="openContent('ContentProj')" >
+                        <i id="project_id">1</i>&nbsp;Fav system
+                     </div> -->
+
+                     <!-- Add school-edge on my portfolio-->
+                     <span id="ContentProj" class="project_data">
+                            <p>
+                                Many schools struggle with efficiently managing student data, tracking academic performance, and identifying students at risk of falling behind or dropping out. Current systems are often manual, time-consuming, and lack real-time insights. Additionally, school administrators face challenges in generating reports, managing multiple roles, and ensuring data accuracy across departments. This creates inefficiencies and limits proactive interventions for struggling students. By using machine learning to identify students at risk of falling behind or dropping out, SchoolEdge enables schools to take timely action and improve student outcomes .
+                            </p>
+                            <a href="https://schooledge-production.up.railway.app/" target="parent">Visit website {School-Edge}</a>
+                    </span>
+                     <!--end of school edge-->
+                     <span id="ContentProj" class="project_data" style="display:none;margin-top: -50px;">
+                        <p onclick="this.parentElement.style.display='none';document.getElementById('div11').style.backgroundColor='white';document.getElementById('div11').style.color='black';" class="closeContent">&times;</p>
+                        <span
+                            onclick="this.parentElement.style.display='none'"
+                            class="closeButton"
+                          >
+                            &times;
+                          </span>
+                            <p>
+                                Project discription : this is one of my personal projects i developed in january this year , i got idea when a neighbor country (Uganda) attacked by EBOLA  , i thought it would spread even in our country and i developed  this project which is adruino web_base ( web and arduino project) , they are two projects  which are connected to be one , on arduino is an API of id_card which we call in web project to read its id_card number and save citizen info in database , in those data there is a phone number which is very important ,so how the web is works , as we all know the virus is spread in crowd by closing each other in less than one meter , or by meet a patient zero or anyone who is contaminated , this system is used at entrance of a crowd place like Nyabugogo , school or anywhere more people meet , where a citizen will tap a smart card at RFID card will be read by web system and data saved as an attendance record , so whenever government  found a contaminated person who attended in crowd  , the Admin has to send them a warning message on specific date to take the self-quarantine on anyone attended on that date , you can access it by using these credentials   ,  username&nbsp;:&nbsp; <span style="color:blue;">bikmangeek@gmail.com</span> and password&nbsp;:&nbsp;<span style="color:blue;">@test123@</span> .
+                            </p>
+                            <a href="http://bikman-fav-system.000webhostapp.com" target="parent">Visit website {Fav-system}</a>
+                    </span>
+
+                    <!-- project 2 nlp -->
+                    <!--  <div class="project_data" id="div12" onclick="openContent2('ContentProj2')" style="margin-top:-40px;">
+                        <i id="project_id">2</i>&nbsp;Presenting our cutting-edge Flask web application
+                     </div> -->
+
+                     <span id="ContentProj2" class="project_data" style="display:none;margin-top: -50px;">
+                        <p onclick="this.parentElement.style.display='none';document.getElementById('div12').style.backgroundColor='white';document.getElementById('div12').style.color='black';" class="closeContent">&times;</p>
+                        <span
+                            onclick="this.parentElement.style.display='none'"
+                            class="closeButton"
+                          >
+                            &times;
+                          </span>
+                            <p>
+                                
+                                An Artificial Intelligence NLP (Natural Language Processing) marvel. Our app seamlessly transforms written text into high-quality speech across 10 diverse languages: English, Russian, Hindi, Chinese, Japanese, German, Spanish, Malay, French, and Arabic. Through the fusion of advanced AI algorithms and state-of-the-art NLP techniques, users can effortlessly convert their messages into audio, breaking down language barriers with ease. Whether you're communicating globally or enhancing accessibility for diverse audiences, our intuitive interface ensures a seamless experience. Experience the power of AI-driven communication like never before, with precise pronunciation and intonation tailored to each language. Elevate your linguistic endeavors and embrace the future of communication with our AI NLP Text-to-Speech Flask Web App. Unlock a world of possibilities today!
+                            </p>
+                            <a href="https://tacuai-nlp.onrender.com/" target="parent">Access website {NLP_app}</a>
+                    </span>
+                    <!--end of proejct  2-->
+
+                </div>
+
+               <!--  <script>
+                    function openContent(project){
+                        var div1=document.getElementById('div11');
+                        document.getElementById(project).style.display="block";
+                        div1.style.backgroundColor="skyblue";
+                        div1.style.color="white";
+                    }
+
+                    function openContent2(project){
+                        var div2=document.getElementById('div12');
+                        document.getElementById(project).style.display="block";
+                        div2.style.backgroundColor="skyblue";
+                        div2.style.color="white";
+                    }
+                </script> -->
+                 
+
+                <!--div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div -->
+            <!-- </section>
+
+            <!--===== CONTACT =====-->
+            <!-- <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form" method="POST">
+                        <input type="text" placeholder="Name" class="contact__input"  id="name" required>
+                        <input type="mail" placeholder="Email" class="contact__input"  id="email" required>
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" id="body" required></textarea>
+                        <input type="button" value="Send" class="contact__button button" onclick="sendMail()">
+                    </form>
+                </div>
+            </section> -->
+        </main>
+
+        <script>
+
+            function sendMail(){
+                var name=document.getElementById('name');
+                var email=document.getElementById('email');
+                var body=document.getElementById('body');
+                var message="am "+name+" "+body+" : and my email is : "+email;
+                var subject="from portfolio";
+
+                window.location="mailto:ntiruhungwab@gmail.com?subject="+subject+"&body="+message;
+
+                alert('Message sent successfully !');
+
+            }
+
+        </script>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Bikman Ntiruhungwa</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169;myportfolio&copy;.<script>new getFullYear();</script> All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
